@@ -1,0 +1,226 @@
+<DOCTYPE html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<html ng-app="ResumeApp" >
+<header>
+		<center>  
+			 <span > <b> <i> PRANEETH KUMAR THANGALLAPALLY </i> </b> </span>
+			 <img src="images\Praneeth.jpg" style="float:right;height:54px;width:50px"/>
+		</center>	
+</header>
+<head>
+<link rel="stylesheet" type="text/css" href="css\ResumeStyleSheet.css"/>
+	<div>
+		<h3> Professional Summary: </h3>
+			<blockquote> Currently working as System Analyst with an overall experience of 9+ years 
+					with most of the experience in Developing UI of applications.
+			</blockquote>
+	</div>
+</head>
+
+<body>
+	<div ng-Controller="ResumeController">
+		<h3> Experience Summary: </h3> 
+			<div>
+				<span style="padding-left:40px"> Working in different domains has helped gain 
+				knowledge in below technical areas.</span>
+				<h4> Primary Technologies: </h4>
+					<ul>
+						<li ng-repeat="x in tech" >
+							{{ x | uppercase }}
+						</li>
+					<ul>
+			</div>
+			<div>
+					<h4> IDE: </h4>
+					<ul>
+						<li ng-repeat="x in IDE" >
+							{{ x | uppercase }}
+						</li>
+					<ul>
+			</div>
+			<div>
+					<h4> Versoin Controls: </h4>
+					<ul>
+						<li ng-repeat="x in versionCtrl" >
+							{{ x | uppercase }}
+						</li>
+					<ul>
+			</div>
+			<div>
+					<h4> Domain Exposure: </h4>
+					<ul>
+						<li ng-repeat="x in domains" >
+							{{ x | uppercase }}
+						</li>
+					<ul>
+			</div>
+			<h4> Projects: </h4>
+			<div id="projects" class="projects">
+				<table>
+					<th>
+						<td colspan="2"> Project#5 </td>
+					</th>
+					<tr>
+						<td> Project Title </td>
+						<td> Paychex Flex - Payroll Services. </td>
+					</tr>
+					<tr>
+						<td> Client </td>
+						<td> Paychex </td>
+					</tr>
+					<tr>
+						<td> Duration </td>
+						<td> Apr 2015 - Apr 2016 </td>
+					</tr>
+					<tr>
+						<td> Role/Location </td>
+						<td> UI Developer - Angular JS/Flex </td>
+					</tr>
+					<tr>
+						<td> Technical Cliche </td>
+						<td> 
+							<li> Angular JS </li>
+							<li> HTML 5</li>
+							<li> Core Java </li>
+							<li> Springs </li>
+						
+						</td>
+					</tr>
+				</table>
+				
+				<span> <b> Project#4 </b> </span>
+				<table>
+					<tr>
+						<td> Project Title </td>
+						<td> TCPLM Implementation - UI Development </td>
+					</tr>
+					<tr>
+						<td> Client </td>
+						<td> Johnson Controls Inc. </td>
+					</tr>
+					<tr>
+						<td> Duration </td>
+						<td> July 2013 - Apr 2015 </td>
+					</tr>
+					<tr>
+						<td> Role/Location </td>
+						<td> Onsite Technical Lead - Michigan, USA </td>
+					</tr>
+					<tr>
+						<td> Technical Cliche </td>
+						<td> 
+							<li> Angular JS </li>
+							<li> HTML 5</li>
+							<li> Core Java </li>
+							<li> Teamcenter SOA </li>						
+						</td>
+					</tr>
+				</table>
+			
+			
+				<span> <b> Project#3 </b> </span>
+				<table>
+					<tr>
+						<td> Project Title </td>
+						<td> Teamcenter Retail - Softlines, Hardlines and Footwear Implementation </td>
+					</tr>
+					<tr>
+						<td> Client </td>
+						<td> The Jones Group </td>
+					</tr>
+					<tr>
+						<td> Duration </td>
+						<td> Jan 2012 - July 2013 </td>
+					</tr>
+					<tr>
+						<td> Role/Location </td>
+						<td> Onsite Coordinator - New York, USA </td>
+					</tr>
+					<tr>
+						<td> Technical Cliche </td>
+						<td> 
+							<li> Angular JS </li>
+							<li> HTML 5</li>
+							<li> Core Java </li>
+							<li> Adobe Flex 3.0</li>						
+						</td>
+					</tr>
+				</table>
+				
+				<span> <b> Project#2 </b> </span>
+				<table>
+					<tr>
+						<td> Project Title </td>
+						<td> Teamcenter - Softlines and Hardlines </td>
+					</tr>
+					<tr>
+						<td> Client </td>
+						<td> Siemens PLM Software </td>
+					</tr>
+					<tr>
+						<td> Duration </td>
+						<td> May 2009 - Dec 2011 </td>
+					</tr>
+					<tr>
+						<td> Role/Location </td>
+						<td> Module Lead - Hyderabad, India </td>
+					</tr>
+					<tr>
+						<td> Technical Cliche </td>
+						<td> 
+							<li> Core Java </li>
+							<li> Adobe Flex 3.0</li>	
+							<li> Blaze DS </li>					
+						</td>
+					</tr>
+				</table>
+			
+				<span> <b> Project#1 </b> </span>
+				<table>
+					<tr>
+						<td> Project Title </td>
+						<td> TCS BANCS - TRADING </td>
+					</tr>
+					<tr>
+						<td> Client </td>
+						<td> TCS Internal </td>
+					</tr>
+					<tr>
+						<td> Duration </td>
+						<td> Mar 2007 - Apr 2009 </td>
+					</tr>
+					<tr>
+						<td> Role/Location </td>
+						<td> Technical Lead - Chennai,India </td>
+					</tr>
+					<tr>
+						<td> Technical Cliche </td>
+						<td> 
+							<li> Core Java </li>
+							<li> JMS </li>
+							<li> Adobe Flex 3.0</li>	
+							<li> Struts </li>					
+						</td>
+					</tr>
+				</table>
+			</div>
+	</div>
+</body>
+
+<footer> <i> Thank You for visiting. If Interested, Please call me at 201-562-2072 ! </i> </footer>
+
+
+<script>
+angular.module('ResumeApp',[]).controller('ResumeController',function($scope) {
+
+$scope.tech = ["Angular JS", "HTML 5", "Core Java", "Adobe Flex", "Action Script"];
+$scope.IDE = ["Eclipse", "InelliJ", "Flex Builder", "Flash Builder"];
+$scope.versionCtrl = ["GIT","ClearCase","SVN","Microsoft VSS"];
+$scope.domains = ["Finance","Retail","Automobile Industry"];
+
+
+});
+</script>
+
+
+</html>
